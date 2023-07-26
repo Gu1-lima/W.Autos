@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+.logo {
+    padding: 10px 10px;
+}
+
+a {
+    text-decoration-line: none;
+    color: aliceblue;
+}
+
+.nav-infos {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 15px;
+}
+
+.infos:hover {
+    color: #FF0000;
+}
+
+.barra-pesquisa {
+    display: flex;
+    border-radius: 20px;
+    background: #F4F4F4;
+    width: 235px;
+    height: 50px;
+}
+
+.buscar {
+    display: flex;
+    border-style: none;
+    background-color: #F4F4F4;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.lupa {
+    padding: 15px 15px;
+}
+
+.shop {
+    width: 25px;
+    height: 29px;
+}
+
+body {
+    background: #1E1E1E;
+    max-width: 1440px;
+    width: 100%;
+    height: 1600px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+    padding: auto;
+}
+
+.slides {
+    width: 400%;
+    height: 580px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1440px;
+    height: 580px;
+}
+
+.manual-nav {
+    position: absolute;
+    width: 1340px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #F4F4F4;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #F4F4F4;
+}
+
+#radio1:checked~.firt {
+    margin-left: 0;
+}
+
+#radio2:checked~.firt {
+    margin-left: -25%;
+}
+
+#radio3:checked~.firt {
+    margin-left: -50%;
+}
+
+.nav-auto div {
+    border: 2px solid #F4F4F4;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.nav-auto {
+    position: absolute;
+    width: 1340px;
+    margin-top: 540px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.nav-auto .auto-btn1 {
+    background-color: #F4F4F4;
+}
+
+#radio2:checked~.nav-auto .auto-btn2 {
+    background-color: #F4F4F4;
+}
+
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: #F4F4F4;
+}
+
+.title {
+    font-family: 'DM Sans', sans-serif;
+    color: #F4F4F4;
+    padding: 25px 0px;
+    font-size: 35px;
+}
+
+.container-carros {
+    padding: 0px 60px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.container-produto {
+    background-color: #303030;
+    width: 450px;
+    height: 600px;
+    border-radius: 25px;
+}
+
+.img-car {
+    width: 400px;
+    height: 250px;
+    border-radius: 12px;
+    margin: 25px;
+    padding-top: 10px;
+}
+
+.name-car {
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 0px;
+}
+
+.preco-car {
+    color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.parcerlas {
+    color: #F4F4F4;
+    font-family: DM Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.x {
+    color: #FF0000;
+    font-family: DM Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.infos-car{
+    padding: 12px 0px;
+}
+
+.div-infos {
+    display: flex;
+    gap: 10px;
+}
+
+.infos-produto{
+    margin: 25px;
+}
+
+.btn-car {
+    width: 450px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 25px 25px;
+    background: #151515;
+}
+
+.text-btn {
+    padding: 27px 123px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

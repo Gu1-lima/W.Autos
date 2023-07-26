@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W. Autos</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html"><img class="logo" src="./assets/W. Autos.png" alt="Logo do site"></a>
+        </div>
+        <nav class="nav-infos">
+            <a class="infos" href="">Sobre nós</a>
+            <a class="infos" href="#Carros">Carros</a>
+            <a class="infos" href="">Contato</a>
+            <div class="barra-pesquisa">
+                <img src="./assets/lupa.png" alt="lupa" class="lupa">
+                <input class="buscar" type="text" placeholder="Buscar">
+            </div>
+            <div class="div-shop"></div>
+            <a href=""><img class="shop" src="./assets/sacola-compras.png" alt="Sacola compras"></a>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide firt">
+                <img src="./assets/audi R8 1.png" alt="banner">
+            </div>
+            <div class="slide">
+                <img src="./assets/audi-banner 1.png" alt="banner 2">
+            </div>
+            <div class="slide">
+                <img src="./assets/Audi-fundo 1.png" alt="banner 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
+
+        <div class="manual-nav">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+    <section id="Carros">
+        <div class="container-carros">
+            <div class="div-title">
+                <h1 class="title">Carros SUV:</h1>
+            </div>
+            <div class="container">
+
+                <div class="container-produto">
+                    <div class="img-car">
+                        <img src="./assets/evoque.svg" alt="">
+                    </div>
+                    <div class="infos-produto">
+                        <h1 class="name-car">Range Rouver Evoque</h1>
+
+                        <div class="infos-car">
+                            <p class="preco-car">R$ 427.950,00</p>
+                            <div class="div-infos">
+                                <p class="parcerlas">Ou até</p>
+                                <p class="x">60x</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn-car">
+                            <a class="text-btn" href="">Saiba mais...</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container-produto">
+                    <div class="img-car">
+                        <img src="./assets/BMW-320i.svg" alt="">
+                    </div>
+                    <div class="infos-produto">
+                        <h1 class="name-car">BMW-320i</h1>
+                        <div class="infos-car">
+                            <p class="preco-car">R$ 315.950,00</p>
+                            <div class="div-infos">
+                                <p class="parcerlas">Ou até</p>
+                                <p class="x">60x</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn-car">
+                            <a class="text-btn" href="">Saiba mais...</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container-produto">
+                    <div class="img-car">
+                        <img src="./assets/lambor.svg" alt="">
+                    </div>
+                    <div class="infos-produto">
+                        <h1 class="name-car">Lamborguine Urus</h1>
+                        <div class="infos-car">
+                            <p class="preco-car">R$ 1.347.356,00</p>
+                            <div class="div-infos">
+                                <p class="parcerlas">Ou até</p>
+                                <p class="x">60x</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn-car">
+                            <a class="text-btn" href="">Saiba mais...</a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
