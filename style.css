@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.header {
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -36,15 +36,14 @@ a {
 }
 
 .infos:hover {
-    color: #FF0000;
+    color: #665e5e;
+    transition: 0.5s;
 }
 
 .barra-pesquisa {
     display: flex;
-    border-radius: 20px;
-    background: #F4F4F4;
-    width: 235px;
-    height: 50px;
+    align-items: center;
+    position: relative;
 }
 
 .buscar {
@@ -53,10 +52,17 @@ a {
     background-color: #F4F4F4;
     font-size: 15px;
     border-radius: 20px;
+    padding-left: 50px;
+    border-radius: 20px;
+    background: #F4F4F4;
+    width: 235px;
+    height: 50px;
 }
 
 .lupa {
     padding: 15px 15px;
+    position: absolute;
+    left: 1px;
 }
 
 .shop {
@@ -66,140 +72,58 @@ a {
 
 body {
     background: #1E1E1E;
-    max-width: 1440px;
+    padding: auto;
     width: 100%;
-    height: 1600px;
 }
 
 .slider {
     margin: 0 auto;
     width: 100%;
-    height: 580px;
+    height: 58%;
     overflow: hidden;
     padding: auto;
 }
 
-.slides {
-    width: 400%;
-    height: 580px;
-    display: flex;
+.img-banner{
+    width: 100%;
 }
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-    transition: 2s;
-}
-
-.slide img {
-    width: 1440px;
-    height: 580px;
-}
-
-.manual-nav {
-    position: absolute;
-    width: 1340px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #F4F4F4;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: #F4F4F4;
-}
-
-#radio1:checked~.firt {
-    margin-left: 0;
-}
-
-#radio2:checked~.firt {
-    margin-left: -25%;
-}
-
-#radio3:checked~.firt {
-    margin-left: -50%;
-}
-
-.nav-auto div {
-    border: 2px solid #F4F4F4;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transform: 1s;
-}
-
-.nav-auto {
-    position: absolute;
-    width: 1340px;
-    margin-top: 540px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked~.nav-auto .auto-btn1 {
-    background-color: #F4F4F4;
-}
-
-#radio2:checked~.nav-auto .auto-btn2 {
-    background-color: #F4F4F4;
-}
-
-#radio3:checked~.nav-auto .auto-btn3 {
-    background-color: #F4F4F4;
-}
-
-.title {
+.title{
     font-family: 'DM Sans', sans-serif;
     color: #F4F4F4;
     padding: 25px 0px;
     font-size: 35px;
 }
 
-.container-carros {
+.container-carros{
     padding: 0px 60px;
 }
 
-.container {
+.container{
     display: flex;
-    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
 }
 
-.container-produto {
+.container-produto{
     background-color: #303030;
     width: 450px;
     height: 600px;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.img-car {
+.img-car{
     width: 400px;
     height: 250px;
     border-radius: 12px;
     margin: 25px;
-    padding-top: 10px;
 }
 
-.name-car {
+.name-car{
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
     font-size: 35px;
@@ -207,9 +131,10 @@ body {
     font-weight: 700;
     line-height: normal;
     padding: 10px 0px;
+    white-space: nowrap;
 }
 
-.preco-car {
+.preco-car{
     color: #F4F4F4;
     font-family: 'DM Sans', sans-serif;
     font-size: 30px;
@@ -218,7 +143,7 @@ body {
     line-height: normal;
 }
 
-.parcerlas {
+.parcerlas{
     color: #F4F4F4;
     font-family: DM Sans;
     font-size: 28px;
@@ -227,7 +152,7 @@ body {
     line-height: normal;
 }
 
-.x {
+.x{
     color: #FF0000;
     font-family: DM Sans;
     font-size: 28px;
@@ -246,7 +171,7 @@ body {
 }
 
 .infos-produto{
-    margin: 25px;
+    padding: 0px 25px;
 }
 
 .btn-car {
@@ -258,9 +183,50 @@ body {
 }
 
 .text-btn {
-    padding: 27px 123px;
+    align-items: center;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* Deixando responsivo*/
+.menuMobile{
+    position: absolute;
+    top: 34px;
+    right: 90px;
+}
+@media (max-width:1000px){
+.container-produto{
+    margin-bottom: 25px;
+    width: 225px;
+    height: 300px;
+}
+.img-car{
+    width: 200px;
+    height: 125px;
+    margin: 15px;
+}
+.img{
+    width: 200px;
+    height: 125px;
+}
+.name-car{
+    font-size: 18px;
+    padding: 0;
+}
+.preco-car{
+    font-size: 15px;
+    padding: 0;
+}
+.parcerlas{
+    font-size: 14px;
+}
+.x{
+    font-size: 14px;
+}
+.btn-car{
+    width: 225px;
+    height: 50px;
+}
 }
